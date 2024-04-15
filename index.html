@@ -1,17 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<style>
-    .navbar{
+      <html>
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=Submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: floralwhite;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=Submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        border-radius: 10px;
+        background-color:aqua;
+        padding: 20px;
+      }
+
+      .navbar{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding-left: 180px;
-        padding-right: 180px;  
+        align-items:center;
+        padding: 1rem 2rem;
+
+
     }
     .footer{
         display: flex;
@@ -21,7 +53,7 @@
         padding-right: 180px;
     }
     .bio{
-        display: flex;
+        display: flexbox;
         flex-direction: row;
         justify-content: space-between;
         padding-left: 180px;
@@ -39,53 +71,49 @@
         
     }
     a{
-        margin: 0 20px 0 20px;
+        margin: 0 10px 0 10px;
     }
     .link{
         display: flex;
         flex-direction: column;
         margin-top: 15px;
-        font-size: 18px;
+        font-size: 15px;
 
     }
-</style>
-<body>
-
-    <div class="navbar">
-        <img src="./assest/8_1sasa11.jpg" alt="" width="200" height="200">
-        <nav>
-            <ul>
-                <a href="https://www.facebook.com/">Home</a>
-                <a href="https://twitter.com/login">About</a>
-                <a href="https://www.instagram.com/">Contact</a>
-            </ul>
-              </nav>
-    </div>
-    <video width="1000" height="700" controls>
-        <source src="./assest/Nike Football.mp4" type="video/mp4">
-      </video>
-      <div class="bio">
-        <div>
-            <h1>Brandon Van Heerden</h1>
-            <h2>BIO</h2>
-            <p>Isaih 22:20 SoulfulHouseMusic StayHumble.</p>
+      </style>
+      </head>
+      <body>
+        <div class="navbar">
+            <img src="./assest/Black and White Modern Illustrative Barbershop Logo.png" alt="" width="200    " height="200">
+            <nav>
+                <ul>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </ul>
+                  </nav>
         </div>
-        <img src="311232452_883926669266961_6140878398924806404_n.jpg" alt="" width="200" height="200">
+      <h3>Contact Form</h3>
+      
+      <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Brandon">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Van Heerden">
+          
+          <label for="email">EMAIL</label>
+          <input type="text" id="Email Address" name="Email Address" placeholder="brandonvanheerden93@gmail.com">
+      
+         
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
       </div>
-      <div class="footer">
-          <div>
-            <h1>Address</h1>
-            <p>11 St Peters Rd <br/>Colville<br/> Kimberley <br/> 8301</p>
-          </div>
-          <nav>
-            <ul class="link">
-                <a href="https://www.facebook.com/">FaceBook</a>
-                <a href="https://twitter.com/login">Twitter</a>
-                <a href="https://www.instagram.com/">Instagram</a>
-            </ul>
-              </nav>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13996.568550764305!2d24.750751724734734!3d-28.715297911535394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9b1ae008793ca3%3A0x70056fe45af8f2c9!2s11%20St%20Peters%20St%2C%20Colville%2C%20Kimberley%2C%208301!5e0!3m2!1sen!2sza!4v1712653057196!5m2!1sen!2sza" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-
-    </body>
-</html>
+      
+      </body>
+      </html>
