@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+      <html>
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <style>
+      body {font-family: Arial, Helvetica, sans-serif;}
+      * {box-sizing: border-box;}
+      
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+      }
+      
+      input[type=Submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: floralwhite;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=Submit]:hover {
+        background-color: #45a049;
+      }
+      
+      .container {
+        border-radius: 10px;
+        background-color:aqua;
+        padding: 20px;
+      }
+
+      .navbar{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:center;
+        padding: 1rem 2rem;
+      
+          }
+        
+          
+    .footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 180px;
+        padding-right: 180px;
+    }
+    .bio{
+        display: flexbox;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 180px;
+        padding-right: 180px;   
+    }
+    video{
+        padding-left: 400px;
+        padding-right: 180px;
+        padding-top: 30px; 
+        padding-bottom: 50px;
+    }
+    ul{
+        padding-top: 30px;
+        display: flex;
+        
+    }
+    a{
+        margin: 0 10px 0 10px;
+    }
+    .link{
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        font-size: 15px;
+
+    }
+      </style>
+      </head>
+      <body>
+        <div class="navbar">
+            <img src="./assest/Black and White Modern Illustrative Barbershop Logo.png" alt="" width="200    " height="200">
+            <nav>
+                <ul>
+                    <a href="./index.html">Home</a>
+                    <a href="./about.html">About</a>
+                    <a href="./contact.html">Contact</a>
+                </ul>
+                  </nav>
+        </div>
+
+        <div>
+          <h1>Address</h1>
+          <p>11 St Peters Rd<br>Colville<br>Kimberley<br>8301</p>
+        </div>
+      <h3>Contact Form</h3>
+      
+      <div class="container">
+        <form
+        action="https://formspree.io/f/xzbnykkl"
+        method="POST"
+      >
+        <label>
+          Your email:
+          <input type="email" name="email">
+        </label>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+
+        <button type="submit">Send</button>
+      </form>
+      </div>
+      <script src="./script.js"></script>
+      </body>
+      </html>
